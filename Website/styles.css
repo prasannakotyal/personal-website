@@ -1,0 +1,81 @@
+
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg); /* Added background color */
+    color: var(--fg); /* Added text color */
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    font-size: .9rem;
+    line-height: 1.5;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 15%;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+/* General styles */
+
+h1, h2, h3, h4 {
+    color: var(--fg);
+}
+
+a, a:visited {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive styles */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #141617;
+        --bg-bright: #191c1d;
+        --fg: #b2aea9;
+        --link: #ff79c6;
+        --border: #333;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
